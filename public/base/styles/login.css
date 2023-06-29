@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --poppins: 'Poppins', sans-serif;
+  --lato: 'Lato', sans-serif;
+
+  --light: #f9f9f9;
+  --primary: #0cc0df;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #023047;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+}
+
+.formLogin {
+  width: 100%;
+  max-width: 32rem;
+  display: flex;
+  margin: 2rem 4rem 4rem 10rem;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 4rem;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+  gap: 5px;
+}
+
+.areaLogin img {
+  width: 420px;
+}
+
+.formLogin img {
+  margin: 0 auto;
+  padding: 0 0 1rem 0;
+  max-width: 22rem;
+}
+.formLogin h1 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.3em;
+}
+
+.formLogin p {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.formLogin input {
+  padding: 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 4px;
+  transition: all linear 160ms;
+  outline: none;
+}
+
+.formLogin input:focus {
+  border: 1px solid var(--primary);
+}
+
+.formLogin label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.formLogin a {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #555;
+  transition: all linear 160ms;
+}
+
+.formLogin a:hover {
+  color: var(--primary);
+}
+
+.btn {
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none !important;
+  transition: all linear 160ms;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #ff0676;
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-heading {
+  color: inherit;
+}
+
+.alert-link {
+  font-weight: 700;
+}
+
+.alert-dismissible {
+  padding-right: 4rem;
+}
+.alert-dismissible .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0.75rem 1.25rem;
+  color: inherit;
+}
+
+.alert-primary {
+  color: #0a1223;
+  background-color: #d0d3da;
+  border-color: #bdc1cb;
+}
+.alert-primary hr {
+  border-top-color: #afb4c0;
+}
+.alert-primary .alert-link {
+  color: black;
+}
+
+.alert-secondary {
+  color: #003671;
+  background-color: #cce1f8;
+  border-color: #b8d4f5;
+}
+.alert-secondary hr {
+  border-top-color: #a2c6f2;
+}
+.alert-secondary .alert-link {
+  color: #001e3e;
+}
+
+.alert-success {
+  color: #3e5534;
+  background-color: #e4ede0;
+  border-color: #d9e6d4;
+}
+.alert-success hr {
+  border-top-color: #cbddc4;
+}
+.alert-success .alert-link {
+  color: #273521;
+}
+
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+.alert-info hr {
+  border-top-color: #abdde5;
+}
+.alert-info .alert-link {
+  color: #062c33;
+}
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+.alert-warning hr {
+  border-top-color: #ffe8a1;
+}
+.alert-warning .alert-link {
+  color: #533f03;
+}
+
+.alert-danger {
+  color: #851c0a;
+  background-color: #ffd7d0;
+  border-color: #ffc6bd;
+}
+.alert-danger hr {
+  border-top-color: #ffb0a4;
+}
+.alert-danger .alert-link {
+  color: #561206;
+}
+
+.alert-light {
+  color: #817f7f;
+  background-color: #fefdfd;
+  border-color: #fdfcfc;
+}
+.alert-light hr {
+  border-top-color: #f3eded;
+}
+.alert-light .alert-link {
+  color: #676666;
+}
+
+.alert-lDark {
+  color: #111630;
+  background-color: #d2d5df;
+  border-color: #c1c4d2;
+}
+.alert-lDark hr {
+  border-top-color: #b2b6c7;
+}
+.alert-lDark .alert-link {
+  color: #04050a;
+}
+
+.alert-gDark {
+  color: #0a1223;
+  background-color: #d0d3da;
+  border-color: #bdc1cb;
+}
+.alert-gDark hr {
+  border-top-color: #afb4c0;
+}
+.alert-gDark .alert-link {
+  color: black;
+}
+
+.alert-dark {
+  color: #030b1e;
+  background-color: #cdd0d8;
+  border-color: #b9bec8;
+}
+.alert-dark hr {
+  border-top-color: #abb1bd;
+}
+.alert-dark .alert-link {
+  color: black;
+}

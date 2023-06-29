@@ -1,0 +1,550 @@
+/*-----------------------------------------------------------------------------
+Tchossy Solution | Angola
+
+author:  tchossy
+email:      info@tchossy.com
+website:    http://www.tchossy.com
+-----------------------------------------------------------------------------*/
+
+:root {
+  --primary: #0cc0df;
+}
+
+.pt30 {
+  padding-top: 30px;
+}
+
+.pb30 {
+  padding-bottom: 30px;
+}
+
+.pt40 {
+  padding-top: 40px;
+}
+
+.pb40 {
+  padding-bottom: 40px;
+}
+
+.pt60 {
+  padding-top: 60px;
+}
+
+.pb60 {
+  padding-bottom: 60px;
+}
+
+.pt70 {
+  padding-top: 70px;
+}
+
+.pb70 {
+  padding-bottom: 70px;
+}
+
+.pt80 {
+  padding-top: 80px;
+}
+
+.pb80 {
+  padding-bottom: 80px;
+}
+
+.pt100 {
+  padding-top: 100px;
+}
+
+.pb100 {
+  padding-bottom: 100px;
+}
+
+.pt130 {
+  padding-top: 130px;
+}
+
+.pb130 {
+  padding-bottom: 130px;
+}
+
+.pt150 {
+  padding-top: 150px;
+}
+
+.pb150 {
+  padding-bottom: 150px;
+}
+
+.pt180 {
+  padding-top: 180px;
+}
+
+.pb180 {
+  padding-bottom: 180px;
+}
+
+.pt200 {
+  padding-top: 200px;
+}
+
+.pb200 {
+  padding-bottom: 200px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.ugf-bg {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#fae8e8),
+    to(#faf4f4)
+  );
+  background-image: -o-linear-gradient(bottom, #fdfdfd, #f7f7f7);
+  background-image: linear-gradient(to top, #fdfdfd, #f7f7f7);
+  overflow: hidden;
+}
+
+.ugf-container-wrap {
+  min-height: 100vh;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ugf-container {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 570px;
+}
+.ugf-container .ugf-logo {
+  position: absolute;
+  top: 40px;
+  left: 15px;
+}
+
+.ugf-form-block {
+  position: relative;
+}
+.ugf-form-block:before {
+  position: absolute;
+  top: 30px;
+  right: -65px;
+  z-index: 1;
+  content: url(../images/dots.png);
+}
+.ugf-form-block:after {
+  position: absolute;
+  bottom: -45px;
+  left: -90px;
+  z-index: 1;
+  content: url(../images/dots.png);
+}
+
+.ugf-form-wrap {
+  background: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.07);
+  padding: 50px;
+  position: relative;
+  z-index: 9;
+}
+.ugf-form-wrap .marker-icon {
+  position: absolute;
+  top: -65px;
+  right: 22px;
+}
+.ugf-form-wrap h3 {
+  font-size: 2.6rem;
+  font-family: 'Roboto', sans-serif;
+  color: #1c2437;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.ugf-form-wrap p {
+  font-size: 1.3rem;
+  color: #999da3;
+  margin-bottom: 20px;
+}
+.ugf-form-wrap form {
+  width: 100%;
+}
+.ugf-form-wrap form .form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+.ugf-form-wrap form .form-group.mb10 {
+  margin-bottom: 10px;
+}
+.ugf-form-wrap form .form-group.mb20 {
+  margin-bottom: 20px;
+}
+.ugf-form-wrap form .form-group.check-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.ugf-form-wrap
+  form
+  .form-group.check-flex
+  .custom-checkbox
+  .custom-control-input {
+  height: 18px;
+  width: 18px;
+  border-radius: 3px;
+  border: 3px solid rgba(0, 0, 0, 0.12);
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.ugf-form-wrap
+  form
+  .form-group.check-flex
+  .custom-checkbox
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
+  background: var(--primary);
+}
+.ugf-form-wrap
+  form
+  .form-group.check-flex
+  .custom-checkbox
+  .custom-control-label {
+  width: auto;
+  text-align: left;
+  position: static;
+  top: auto;
+  left: auto;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  padding-left: 30px;
+  cursor: default;
+}
+.ugf-form-wrap
+  form
+  .form-group.check-flex
+  .custom-checkbox
+  .custom-control-label:before {
+  top: 2px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+.ugf-form-wrap
+  form
+  .form-group.check-flex
+  .custom-checkbox
+  .custom-control-label:after {
+  top: 2px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+}
+.ugf-form-wrap
+  form
+  .form-group.check-flex
+  .custom-checkbox
+  .custom-control-label
+  a {
+  color: var(--primary);
+}
+.ugf-form-wrap form .form-group.check-flex a {
+  color: #546274;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.ugf-form-wrap form .form-group.check-flex a:hover {
+  color: var(--primary);
+}
+.ugf-form-wrap form .form-group .form-control {
+  height: 60px;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 25px 15px 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 80px;
+  color: #546274;
+}
+.ugf-form-wrap form .form-group .form-control:focus,
+.ugf-form-wrap form .form-group .form-control:valid {
+  border-color: rgba(24, 136, 245, 0.5);
+}
+.ugf-form-wrap form .form-group .form-control:focus + label,
+.ugf-form-wrap form .form-group .form-control:valid + label {
+  top: 7px;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+.ugf-form-wrap form .form-group label {
+  position: absolute;
+  top: 18px;
+  margin-bottom: 0;
+  left: 17px;
+  z-index: 2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #546274;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: text;
+}
+.ugf-form-wrap form .form-group .form-control.has-error {
+  border-color: rgba(255, 62, 88, 0.25);
+}
+.ugf-form-wrap form .form-group .form-control.has-error ~ .error-msg {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  color: #ff3e58;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.ugf-form-wrap form .terms {
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  font-weight: 400;
+  color: #999da3;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.ugf-form-wrap form .terms span {
+  display: block;
+}
+.ugf-form-wrap form .terms a {
+  color: var(--primary);
+}
+.ugf-form-wrap form .btn {
+  height: 60px;
+  width: 100%;
+  display: block;
+  background: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.ugf-form-wrap .thirdparty-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.ugf-form-wrap .thirdparty-login a {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(50% - 15px);
+  flex: 0 0 calc(50% - 15px);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.05);
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: #546274;
+  padding: 0 10px;
+  margin-top: 15px;
+}
+.ugf-form-wrap .thirdparty-login a img {
+  margin-right: 10px;
+}
+
+.alternet-access {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+}
+.alternet-access p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #546274;
+  font-family: 'Roboto', sans-serif;
+}
+.alternet-access p a {
+  color: var(--primary);
+}
+
+.final-bg {
+  background: #f1f6fa;
+  background-size: cover;
+}
+
+.final-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  padding: 150px 15px;
+}
+.final-content h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #1c2437;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+.final-content p {
+  color: #546274;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  max-width: 350px;
+  margin: 0 auto 40px;
+}
+.final-content .btn {
+  width: 170px;
+  text-align: center;
+  background: #0a8bfe;
+  color: #ffffff;
+  font-size: 1.4rem;
+  height: 60px;
+  padding: 0;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  line-height: 60px;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .ugf-container-wrap {
+    padding: 150px 0;
+  }
+
+  .ugf-form-wrap .thirdparty-login a {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+@media all and (max-width: 991px) {
+  .ugf-container-wrap {
+    padding: 150px 0;
+  }
+
+  .ugf-container {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+  }
+
+  .ugf-form-wrap .thirdparty-login a {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .ugf-container-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+
+  .ugf-container {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+  .ugf-container .ugf-logo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .ugf-form-wrap .thirdparty-login a {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+
+  .alternet-access {
+    position: static;
+    display: block;
+    margin-top: 50px;
+  }
+}
+@media all and (max-width: 575px) {
+  .ugf-form-wrap {
+    padding: 50px 30px;
+  }
+  .ugf-form-wrap .marker-icon {
+    display: none;
+  }
+
+  .final-content h2 {
+    font-size: 3.2rem;
+  }
+}

@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect requests to the public folder
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ /public/$1 [L]
+
+# Allow existing files and directories to be accessed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /public/index.php [L]
